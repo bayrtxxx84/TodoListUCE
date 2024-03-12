@@ -5,11 +5,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.torresb.examen.R
 import com.torresb.examen.databinding.FragmentListBinding
+import com.torresb.examen.ui.InsertTaskUC
+import com.torresb.examen.ui.TaskEntity
+import com.torresb.examen.ui.TodoListUCE
 import com.torresb.examen.ui.adapters.TaskAdapterDiffUtil
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 
 class FragmentList : Fragment() {
